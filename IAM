@@ -1,0 +1,20 @@
+## IAM – Identity and Access Management 
+
+- Grouping users based on what functions they perform (eg – Developers, OPerations team, etc) 
+- Works on principle of "least privilege" 
+- Users or user groups can be assigned JSON documents called policies – these policies define permissions of users 
+- IAM is a global service. 
+ 
+
+### Policies Structure (important bits): 
+Statements consists of  
+- Sid – identifier for the statement 
+- Effect – whether the statement allows or denies access 
+- Principal – account/user/role that the policy applies to  
+- Action – list of actions the policy allows or denies 
+- Resource list – list of resources that the actions applies to 
+- Condition – conditions under which this policy is in effect 
+
+ 
+### Password policies: 
+- You can set min password length, etc on the Password Policy section 
