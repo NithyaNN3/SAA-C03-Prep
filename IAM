@@ -18,3 +18,12 @@ Statements consists of
  
 ### Password policies: 
 - You can set min password length, etc on the Password Policy section 
+
+### User Access:
+1. Management console
+2. Command Line interface - setup on your local terminal, protected by access keys
+3. AWS SDK - to call APIs from AWS on your app, protected by access keys
+
+- Keys generated on AWS console
+
+**AWS CLI** 
