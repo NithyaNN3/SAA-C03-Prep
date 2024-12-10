@@ -13,3 +13,9 @@
 - runs with the root user
 - example of instance - t2.micro, t2.xlarge
 
+- instances are optimised for different use cases
+  Sample name - m5.x2large
+
+  m - instance class
+  5 - generation
+  2xlarge - size within instance class
