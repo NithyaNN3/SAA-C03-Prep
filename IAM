@@ -26,4 +26,12 @@ Statements consists of
 
 - Keys generated on AWS console
 
-**AWS CLI** 
+### IAM roles for services
+- AWS will need to perform actions on your behalf so they need roles too
+- Roles: permissions to perform actions
+
+### IAM Security tools
+IAM credentials report - account level - auditing account permissions 
+IAM access advisor - user level
+
+Always create roles for giving permissions to AWS services
