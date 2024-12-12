@@ -19,3 +19,5 @@
   m - instance class
   5 - generation
   2xlarge - size within instance class
+
+### Security groups
