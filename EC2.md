@@ -35,3 +35,5 @@ Important ports -
 4. 80 - HTTP - unsecured websites
 5. 443 - HTTPS - secured websites
 6. 3389 - Remote desktop protocol - log into a windows instance
+
+Update aws credentials to ec2 instances ONLY through IAM roles.
