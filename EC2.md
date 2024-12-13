@@ -37,3 +37,15 @@ Important ports -
 6. 3389 - Remote desktop protocol - log into a windows instance
 
 Update aws credentials to ec2 instances ONLY through IAM roles.
+
+### EC2 purchasing types
+1. On demand - short, pay by second
+2. Reserved - 1 to 3 years - long and convertible
+3. Savings plan - committed long term usage; 1 to 3 years
+4. Spot instances - short term, less reliable; batch jobs, data analysis, etc
+5. Dedicated host - book entire physical server; control instance placement; use if you have an app that needs licenses
+6. Dedicated instances - reserved instances so that no other customer shares hardware
+7. Capacity reserves - reserve capacity in specific AZ
+
+### Spot requests
+You can set price, instance limit, type of reserve, duration, which AZ you want to run it in
