@@ -49,3 +49,18 @@ Update aws credentials to ec2 instances ONLY through IAM roles.
 
 ### Spot requests
 You can set price, instance limit, type of reserve, duration, which AZ you want to run it in
+
+Public IP can be recognised across internet; Private IP only on certain network; Elastic IP  changes as per ec2 IP when it's restarted, they stay constant as opposed to public IPs as long as instance is running
+
+### Placement groups
+strategising how our ec2 placements are across aws
+- cluster: in a low latency group in AZ; use case - low latency apps, high perf computing, distributed dbs or big data workloads needing high speed data exchange 
+- spread: instances across different hardware; enhances fault tolerance and critical apps
+- partition: across many partitions acc to groups; for large scale distributed systems
+
+### Elastic networks interfaces
+networking component - virtual network card attached to the ec2 instance - can use it to configure IP addresses, MAC addresses and security groups
+Advantage is that you can move it from one IPv to another.
+ -> Detach an ENI from a failed instance and reattach it to a standby instance for seamless recovery.
+ -> Use multiple ENIs to separate application traffic, e.g., management traffic on one ENI and application traffic on another.
+ -> Isolate monitoring or logging traffic on a separate ENI for better observability.
