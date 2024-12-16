@@ -64,3 +64,10 @@ Advantage is that you can move it from one IPv to another.
  -> Detach an ENI from a failed instance and reattach it to a standby instance for seamless recovery.
  -> Use multiple ENIs to separate application traffic, e.g., management traffic on one ENI and application traffic on another.
  -> Isolate monitoring or logging traffic on a separate ENI for better observability.
+ -> Bound to a specific AZ region 
+
+### EC2 Hibernate 
+- RAM state preserved
+- RAM state is written to EBS volume
+- root EBS volume is encrypted
+- running > stopping > stopped > running => ram is in instance > ram is being mounted to ebs > ram is mounted to ebs volume > ram is mounted back onto the EC2
