@@ -8,6 +8,7 @@
 - makes a backup of a volume at any point in time
 - not necessary to detach volume to do a snapshot but recommended
 - can copy snapshots across AZ or region
+- you can also create a volume through a snapshot
 
 **EBS snapshot archives** - move snapshot to archive tier which is 75% cheaper; takes 24-72 hours to restore the archive
 
