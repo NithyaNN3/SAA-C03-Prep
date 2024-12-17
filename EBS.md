@@ -89,3 +89,22 @@ Storage tiers - lifecycle policies can be set to move them across tiers
 - cookies used here; have an expiry date
 - used to make sure session data isnt lost
 - 2 types of cookies - application based cookies and duration based cookies
+
+- cross zone LB is enabled for ALB by default but not for NLB, GLB so it's charged
+
+## SSL/TLS
+- allows for traffic between client and LB to be encrypted in transit
+- SSL - secure sockets layer - used to encrypt connections
+- TLS - transport layer security - newer version
+- SSL certs have an expiry date
+
+- load balancer uses an X.509 cert (TLS cert)
+- can manage certs using ACM or AWS certificates manager
+- can upload your own certs too
+- can set hostname by using SNI or server name identification
+
+**SNI** - solve the problem of loading multiple SSL certs
+
+### Connection draining
+- gives time for in flight requests before eregistering an unhealthy instances
+- stops sending requests to the instance
