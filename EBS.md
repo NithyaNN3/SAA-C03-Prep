@@ -70,5 +70,22 @@ Storage tiers - lifecycle policies can be set to move them across tiers
 - route requests based on target groups (based on endpoints), hostname in URL, based on query strings/headers
 - great for microservices and container based apps
 - port mapping feature to redirect to dynamic port
-- 
-- 
+
+## Network load balancer
+- forward TCP and UDP requests to instances
+- handle multiple requests; super low latency
+- one static IP per AZ and allows assignment of elastic IP
+- extreme perf, tcp or udp use cases
+- Target groups - EC2 instances, IP addresses, ALBs
+
+## Gateway load balancer
+- 3rd party network appliances
+- FIrewalls, intrusion detection, deep packet inspection, etc
+- basically filters and redirects traffic to app only when it's deemed to be safe
+
+## Sticky sessions
+- is a way to redirect a client to the same load balancer each time
+- works with classic, application and network LBs
+- cookies used here; have an expiry date
+- used to make sure session data isnt lost
+- 2 types of cookies - application based cookies and duration based cookies
