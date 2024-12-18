@@ -36,7 +36,7 @@ Alias oints hostname to AWS resource; works for root name and non root name; fre
 4. Geolocation
 5. Geoproximity - geolocation of resources and users; you can set a bias towards a resource so more traffic is routed there
 6. IP based - you can set CIDR blocks so that ISPs that fit it is routed there
-7. Multi value answer - 
+7. Multi value answer - allows you to return multiple IPs for a single domain name, client chooses one. This enables load distribution, that's all. For failovers this redundancy is introduced
 
 ### Health Checks
 health checkers from different regions check a resource's health; you can set which region's health checkers ping the resource and set how many need to be passed;
