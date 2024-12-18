@@ -33,7 +33,18 @@ Alias oints hostname to AWS resource; works for root name and non root name; fre
 1. Simple
 2. Weighted - can assign % of traffic
 3. Latency based - redirect based on latency; based on traffic and proximity to AWS region
+4. Geolocation
+5. Geoproximity - geolocation of resources and users; you can set a bias towards a resource so more traffic is routed there
+6. IP based - you can set CIDR blocks so that ISPs that fit it is routed there
+7. Multi value answer - 
 
 ### Health Checks
 health checkers from different regions check a resource's health; you can set which region's health checkers ping the resource and set how many need to be passed;
 Health checks on private resources - can be done by creating a CloudWatch metric and associating a CW alarm then create a health check that checks the alarm itself.
+
+### Failovers
+Switch from primary resource to secondary resource when the health check on primary fails (failover is done because of health checker results)
+
+### Domain registrar vs DNS service
+Domain registrar like GoDaddy gives you a DNS service. Route 53 is DNS service. 3rd party registrars can use Route 53. How?
+Create hosted zone on Route 53 > update NS on 3rd party website to use Route 53 nameservers
