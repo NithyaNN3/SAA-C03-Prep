@@ -10,3 +10,15 @@ RDS detects storage space automatically and scales. You have to set max storage 
 - can setup read replicas as multi AZ for disaster recovery
 
 How to go from single AZ to multi AZ? it's a zero downtime operation, click 'modify' on db
+
+## Amazon Aurora
+IMP!
+1. Proprietary technology and supports postgres and mysql
+2. AWS cloud optimised so provides x perf improvement over RDS
+3. grows in increments of 10gb upto 128TB
+4. can have 15 read replicas and is fast
+5. failovers are instantaneous
+6. costs 20% more than RDS but much more efficient
+7. 6 copies of your data across 3 AZ regions
+8. support for cross region replication
+
