@@ -26,8 +26,9 @@ Short is used when quicker propagation of changes is needed so frequent checks a
 Long is for stable records that rarely change like static websites (1 day). Reduces DNS query traffic.
 
 **Difference between CNAME and Alias**
-CNAME points hostname to hostname and works on only non root domain
-Alias oints hostname to AWS resource; works for root name and non root name; free of charge; have a native health check; cannot set TTL here; targets are ELBs, CLoudFront dist., API gateway, S3 websites, etc
+CNAME points hostname to hostname and works on only non root domain. Ex: blog.example.com to example.com
+Alias oints hostname to AWS resource; works for root name and non root name; free of charge; have a native health check; cannot set TTL here; targets are ELBs, CLoudFront dist., API gateway, S3 websites, etc. Eg: example.com to AWS resources like CLudFront, ELB or S3 bucket.
+Root domains are without a prefix (eg: example.com) whereas non root domain has a subdomain prefix (eg: blog.example.com or www.example.com)
 
 **Route 53 Routing Policies** - routing here is a specific host with IP. If many are returned by a host, a random one is chosen
 1. Simple
