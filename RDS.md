@@ -22,3 +22,28 @@ IMP!
 7. 6 copies of your data across 3 AZ regions
 8. support for cross region replication
 
+## RDS Security:
+1. At rest encryption
+- Database master and replicas encryption using AWS KMS must be defined at launch time
+- master is not encrypted then read replicas cant be either
+- to encrypt unencrypted DB, go through DB snapshot and restore are encrypted
+
+2. In flight
+- TLS ready by default, use AWS TLS root certs on client side
+
+3. IAM Authentication - IAM roles to connect to database
+4. SGs
+5. No SSH available
+6. Audit logs can be enabled and sent to CloudWatch
+
+**Proxy**
+- can deploy a fully managed database proxy for RDS
+- allows apps to pool and share DB connections before being sent to the DB instance to reduce stress on db resources
+- enforce IAM authentication for DB
+
+## ElastiCache
+- acts as a cache - high perf, low latency - session data is written stored in this cache
+- helps reduce loads off of dbs
+- makes apps stateless
+- elasticache involves heavy app code changes
+- can use redis or memcached
