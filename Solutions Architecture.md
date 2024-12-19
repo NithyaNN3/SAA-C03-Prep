@@ -52,6 +52,8 @@ EBS volumes: restore from snapshots
 - most apps have same architecture
 
 Beanstalk has a developer centric view of apps
-Web server tier and worker tier
+Web server tier - for making websites, etc
+worker tier - to deploy workers
+You can create multiple environments (like dev, stage) on it
 
 Deployment modes: single instance vs high availability with load balancer (greater for prod)
