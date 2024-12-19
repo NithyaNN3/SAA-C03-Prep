@@ -30,4 +30,28 @@ RDS, elasticache is Multie AZ to survive disasters
 introduce security groups
 
 
-### 
+### mywordpess.com
+website should access and display pictures
+user data, content, available across world
+
+same initial setup as above
+We use Aurora here as RDS
+Images stored on EBS volumes but we chnge to EFS with ENIs which have images of the app files.
+EBS for single instance apps and EFS for distributed applications.
+
+
+### Instantiating apps quickly
+For ec2 use golden AMI - startup is quick as all dependencies are installed already
+bootstrap user data using Beanstalk
+
+RDS databases: restore from snapshots
+EBS volumes: restore from snapshots
+
+## Beanstalk
+- complicated to manage infra, deploy code, configuration and scaling
+- most apps have same architecture
+
+Beanstalk has a developer centric view of apps
+Web server tier and worker tier
+
+Deployment modes: single instance vs high availability with load balancer (greater for prod)
