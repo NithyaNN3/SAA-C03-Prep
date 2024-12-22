@@ -1,26 +1,26 @@
 ## Athena
--serverless query services to analyze data in S3
--5$ per TB scanned
--perf improvement - columnar data
--compress data
--partitioning on s3 for easy querying
--larger files on s3 are easy to scan
--can query data on any data source using data source connectors on Lambda > results can be stored on s3
+- serverless query services to analyze data in S3
+- 5$ per TB scanned
+- perf improvement - columnar data
+- compress data
+- partitioning on s3 for easy querying
+- larger files on s3 are easy to scan
+- can query data on any data source using data source connectors on Lambda > results can be stored on s3
 
 ## Redshift
--OLAP - online analytical processing
--10x perf improvement
--columnar data store
--provisioned and serverless
--leader node for query planning, compute node for performig the query and sending results
--snapshots, multi AZ for some clusters
--can restore snapshot on new cluster
--**Spectrum** - spectrum nodes perform a query from redshift on s3 without loading it
+- OLAP - online analytical processing
+- 10x perf improvement
+- columnar data store
+- provisioned and serverless
+- leader node for query planning, compute node for performig the query and sending results
+- snapshots, multi AZ for some clusters
+- can restore snapshot on new cluster
+- **Spectrum** - spectrum nodes perform a query from redshift on s3 without loading it
 
 ## OpenSearch
--can search any field, even partial matches
--doesnt natively support SQL
--managed or serverless clusters
+- can search any field, even partial matches
+- doesnt natively support SQL
+- managed or serverless clusters
 
 ## EMR
 Elastic mapreduce
