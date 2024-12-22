@@ -47,3 +47,7 @@ for data lakes - simplify data ingestio, cataloging, access control and analytic
 for SQL apps - real time analyics
 
 Amazon managed service for Apache Flink - process and analyse data streams
+
+## Amazon MSK for apache kafka
+- holds hore memory per msg
+
