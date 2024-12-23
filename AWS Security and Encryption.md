@@ -60,8 +60,20 @@ inflight encryption for websites
 - manage all rules across AWS accounts on the AWS Org
 - WAF rules, security groups, DNS firewall, policies are at region level
 
-WAF, Shield and Firewall manager 
+**WAF, Shield and Firewall manager**
 - used together for full protection
 - ACL rules on WAF
 - Firewall manager helps setup rules/configs on new resources
 - Shield gives ddos attack protection
+
+### Amazon GuardDuty 
+What it is: A threat detection service that continuously monitors your AWS accounts and workloads for malicious or unauthorized activity. - Analyzes data sources such as VPC Flow Logs, CloudTrail Logs, and DNS logs.
+
+### Inspector 
+What it is: An automated security assessment service for applications hosted on AWS. Identify vulnerabilities and deviations from security best practices. Use Cases:
+Assess EC2 instances for known vulnerabilities. 
+
+### Macie
+A data discovery and classification service that uses machine learning to protect sensitive data in S3 buckets. Purpose: Detect and secure sensitive information. Use Cases:
+Ensure compliance with data protection regulations (e.g., GDPR, HIPAA),
+Identify and secure sensitive data stored in S3.
