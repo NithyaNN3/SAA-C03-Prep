@@ -35,3 +35,27 @@ IAM credentials report - account level - auditing account permissions
 IAM access advisor - user level
 
 Always create roles for giving permissions to AWS services
+
+# AWS Organizations
+global services - allows multiple AWS accounts - consolidated billing, pricing benefits
+Security - security control policies to restrict roles and users
+SCP doesnt apply to Management accounts (main acc)
+
+## IAM Conditions
+like restrict client IP from which API calls are being made
+- IAM roles vs resource based policies
+
+## Policy Evaluation
+IAM permission boundary
+
+IAM Identity Center - single sign on for all aws accounts in AWS Organizations
+
+## AWS directory services
+database of objects like computers, printers, etc
+objects organised as trees > group of trees is forest
+-> AWS managed Microsoft AD and AD connector
+
+## AWS Control Tower
+- setup and govern secure and compliant multi account AWS environment based on best practices > it uses AWS Org to create accounts
+- automating setup of env and policy mgmt
+- set up guardrails: preventive (SCP) or detective (AWS Config)
