@@ -80,10 +80,12 @@ NACL is extra level on subnet and SG outside of ec2 instance
 Troubleshooting - look at the ACTION field - remember that NACL is stateless and SG is stateful
 
 ## Site to Site VPN
+An encrypted VPN connection over the public internet between your on-premises network and AWS.
 if we want comms between a data center and VPC > establish conn with customer gateway, VPN gateway and s2s conn
 - virtual private gateway and customer gateway
 
 ## Direct Connect (DX)
+A dedicated, private connection between your on-premises network and AWS. Establishes a physical connection between your data center and an AWS Direct Connect location.
 - dedicated prvate conn from a remote network
 - you need to setup virtual private gateway > access resources
 
