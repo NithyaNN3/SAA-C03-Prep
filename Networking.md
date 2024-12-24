@@ -46,6 +46,7 @@ Network Address Translation
 If we have a public server and we want to access it from a private subnet, there is a NAT instance in public subnet wth EIP. Private IP communicates to NAT instance which changes src IP before it enables comms to public server IP
 
 ## NAT Gateways
+A NAT (Network Address Translation) Gateway in AWS is a managed service that enables resources in a private subnet to access the internet or other AWS services while preventing external systems from initiating connections to those resources.
 AWS managed NAT - pay per hour - created in specific AZ, uses EIP
 - Requires IGW (private subnet => NATGW => IGW)
 - enable multiple NAT gateways in multiple AZs for high availability
