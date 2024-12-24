@@ -66,6 +66,7 @@ NACL is extra level on subnet and SG outside of ec2 instance
 ## VPC Peering
 - privately connect two VPCs to make them behave as if they're in the same network - for comms between them
 - must NOT have overlapping CIDRs
+- no transitive routing - meaning traffic cannot "hop" through a peering connection to reach a third network.
 
 ## VPC endpoints
 - to be able to access a service through the private AWS network instead of the public internet
