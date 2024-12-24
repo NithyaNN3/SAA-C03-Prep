@@ -61,4 +61,33 @@ NACL is extra level on subnet and SG outside of ec2 instance
 - SG allow rules only, NACL has allow/deny rules
 - SG all rules are evald, NACL rules are evald in priority
 - apples to a ec2 instance when specified by somebody, NACL applies to all ec2 instances in a subnet
-- 
+
+## VPC Peering
+- privately connect two VPCs to make them behave as if they're in the same network - for comms between them
+- must NOT have overlapping CIDRs
+
+## VPC endpoints
+- to be able to access a service through the private AWS network instead of the public internet
+- Types of endpoints: interface (provisions ENI as an entry point; costs money) and gateway (provisions a gateway ad must be used as a target in a route table; free)
+- Gateway or interface? Prefer gateway as you only need to change route tables except some cases
+
+## VPC Flow Logs
+- capture IP traffic info
+- monitor and troubleshoot connectivity
+- make it using Athena on S3 or CW logs insights
+
+Troubleshooting - look at the ACTION field - remember that NACL is stateless and SG is stateful
+
+## Site to Site VPN
+if we want comms between a data center and VPC > establish conn with customer gateway, VPN gateway and s2s conn
+- virtual private gateway and customer gateway
+
+## Direct Connect (DX)
+- dedicated prvate conn from a remote network
+- you need to setup virtual private gateway > access resources
+
+## Transit gateway
+- transitive peering between thousants of VOC on prem
+
+## Egress gateway
+An Egress Gateway is a specialized network component or proxy that manages and controls outbound traffic from a network, service mesh, or application. It acts as a controlled exit point for data leaving an internal environment to external systems.
