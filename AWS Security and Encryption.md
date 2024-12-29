@@ -1,7 +1,7 @@
 ## Encryption
-TLS/SSL - in flight encryption
-Server side encryption
-Client side encryption
+- TLS/SSL - in flight encryption
+- Server side encryption
+- Client side encryption
 
 ## KMS - Key Mgmt Service 
 manages encryption keys for us
