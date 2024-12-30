@@ -18,6 +18,6 @@ S3 cross origin repl - great for read only or dynamic content with low latency a
 **Cache validations** - when you update a backend, you can refresh cache entirely so that TTL also has the updated content when main page is refreshed
 
 ### Global Accelerator
-- content access needed globally? content needs to hop between multiple servers increasing latency
+- is content access needed globally? content needs to hop between multiple servers increasing latency
 - unicast IP - one server has one IP; anycast IP - all servers have same ip so content hops to the closest ip - GA uses anycast
 - improves perf for tcp, udp; HTTP use cases with static IP; non-HTTP use cases like gaming or voice over IP
