@@ -1,5 +1,5 @@
 # Docker 
-- way to run apps with OS
+- way to run apps with OS and dependencies
 - docker images are stored in docker repositories
 - resources are shared with host => many containers on one server
 - Amazon ECR - container registry, ECS container service
