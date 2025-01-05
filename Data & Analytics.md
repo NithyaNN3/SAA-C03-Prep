@@ -1,5 +1,5 @@
 ## Athena
-- serverless query services to analyze data in S3
+- Serverless query service to analyze data in S3
 - 5$ per TB scanned
 - perf improvement - columnar data
 - compress data
