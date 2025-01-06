@@ -1,5 +1,5 @@
 ## Disaster Recovery in AWS
-- any event that has a negative impact on company
+- Any event that has a negative impact on company
 - DR is preparing for and recovering from the disaster
 
 - Types:
